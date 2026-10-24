@@ -1,0 +1,16 @@
+import assert from 'node:assert/strict';
+import {checkForUpdates} from '../download-site/public/app/app-updates.mjs';
+let reloads=0,updated=0,activated=0;
+globalThis.location={reload(){reloads++;}};
+Object.defineProperty(globalThis,'navigator',{value:{onLine:false},configurable:true});
+await assert.rejects(checkForUpdates,/internet/);
+navigator.onLine=true;
+globalThis.fetch=async()=>({ok:false});
+await assert.rejects(checkForUpdates,/Could not check/);
+assert.equal(reloads,0);
+globalThis.fetch=async()=>({ok:true});
+await checkForUpdates();assert.equal(reloads,1);
+const events=new Map();
+navigator.serviceWorker={getRegistration:async()=>({update:async()=>updated++,waiting:{postMessage(message){assert.equal(message.type,'ACTIVATE_UPDATE');activated++;events.get('controllerchange')();}}}),addEventListener:(name,fn)=>events.set(name,fn),removeEventListener:name=>events.delete(name)};
+await checkForUpdates();assert.equal(updated,1);assert.equal(activated,1);assert.equal(reloads,2);
+console.log('App update checks: offline, failure, reload and explicit worker activation passed.');

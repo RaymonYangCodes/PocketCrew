@@ -1,0 +1,13 @@
+import assert from 'node:assert/strict';
+import {goalProgress} from '../download-site/public/app/goal-progress.mjs';
+const state={ledger:[{childId:'one',jar:'spend',amount:1500},{childId:'one',jar:'save',amount:9000},{childId:'two',jar:'spend',amount:8000}]};
+const goal={childId:'one',featured:true,target:2000,saved:700};
+const before=JSON.stringify(state);
+assert.deepEqual(goalProgress(state,goal),{amount:1500,percent:75,remaining:500});
+assert.equal(JSON.stringify(state),before);
+state.ledger.push({childId:'one',jar:'spend',amount:-500});
+assert.equal(goalProgress(state,goal).percent,50);
+state.ledger.push({childId:'one',jar:'spend',amount:2000});
+assert.equal(goalProgress(state,goal).percent,100);assert.equal(goalProgress(state,goal).remaining,0);
+assert.equal(goalProgress(state,{...goal,featured:false}).amount,700);
+console.log('Goal progress: $15/$20=75%, spending, cap, child isolation, and no ledger changes passed.');

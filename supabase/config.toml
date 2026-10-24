@@ -1,0 +1,25 @@
+project_id = "pocketcrew"
+
+[auth]
+site_url = "pocketcrew://auth-callback"
+additional_redirect_urls = ["pocketcrew://auth-callback", "pocketcrew://invite"]
+
+[auth.external.google]
+enabled = false
+client_id = "env(SUPABASE_AUTH_EXTERNAL_GOOGLE_CLIENT_ID)"
+secret = "env(SUPABASE_AUTH_EXTERNAL_GOOGLE_CLIENT_SECRET)"
+skip_nonce_check = false
+
+[functions.send-family-invite]
+verify_jwt = true
+
+[functions.delete-account]
+verify_jwt = true
+
+[functions.search-amazon-products]
+verify_jwt = true
+
+[functions.search-shopping-products]
+# Handler verifies either a guardian JWT + membership or a private child capability
+# + PIN through read_child_connection. The legacy gateway cannot verify child links.
+verify_jwt = false

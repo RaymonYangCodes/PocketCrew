@@ -1,0 +1,14 @@
+PocketCrew — Mac developer preview
+
+Drag PocketCrew.app to Applications, then open it from Applications.
+Requires macOS 14 or newer on an Apple silicon Mac.
+
+This build is ad-hoc signed and is not notarized by Apple. macOS may block
+opening a downloaded copy. Do not disable your system security protections.
+A Developer ID-signed, notarized release is needed for seamless public installation.
+
+Cloud sign-in is held in memory on this Mac preview to avoid Keychain prompts
+after rebuilds. You must sign in again after quitting. Use the same guardian
+account to reopen your existing family; do not create another family.
+
+PocketCrew is a financial-learning ledger. No real funds are held or moved.

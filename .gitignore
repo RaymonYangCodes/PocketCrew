@@ -1,0 +1,21 @@
+.build
+.swiftpm
+*.log
+.DS_Store
+*.xcuserstate
+.env
+.env.*
+!.env.example
+!supabase/.env.example
+
+# Local builds, downloaded installers, and deployment credentials
+dist/
+node_modules/
+.vercel/
+download-site/public/downloads/
+*.dmg
+*.zip
+*.p12
+*.mobileprovision
+*.pem
+*.key

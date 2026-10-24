@@ -1,0 +1,13 @@
+import assert from 'node:assert/strict';
+import {addMoney} from '../download-site/public/app/add-money.mjs';
+const s={children:[{id:'c',split:{spend:50,save:40,give:10}}],ledger:[],audit:[]};
+assert.throws(()=>addMoney(s,'c','c',1000));
+assert.throws(()=>addMoney(s,'parent','c',-100));
+assert.throws(()=>addMoney(s,'parent','missing',100));
+assert.equal(s.ledger.length,0);
+addMoney(s,'parent','c',1001);
+assert.deepEqual(s.ledger.map(t=>t.amount),[501,400,100]);
+assert.equal(s.ledger.reduce((n,t)=>n+t.amount,0),1001);
+s.children[0].split={spend:100,save:0,give:0};addMoney(s,'parent','c',1);
+assert.equal(s.ledger.length,4);
+console.log('Add Money: parent permissions, validation, exact split and rounding passed.');

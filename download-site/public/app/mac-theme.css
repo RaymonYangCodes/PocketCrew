@@ -1,0 +1,71 @@
+/* Shared visual language from the native PocketCrew SwiftUI theme. */
+:root{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;--rounded:ui-rounded,"SF Pro Rounded",-apple-system,BlinkMacSystemFont,sans-serif}
+h1,h2,h3,.brand,.welcome-brand b,.reward,.jar strong,.amount,.summary-tile strong{font-family:var(--rounded);font-weight:900}h1{font-size:34px;letter-spacing:-1px}h2{font-size:24px}h3{font-size:19px}.brand small{color:var(--green)}button,.button{border-radius:12px}button.quiet{background:white;border:1px solid #d6e0d8;color:var(--green)}.card{border-radius:22px;border-color:#17251f0e;box-shadow:0 8px 30px #17251f0e;background:#fffffffa}.jars .jar{background:white;border:1px solid #17251f0e;box-shadow:0 8px 24px #17251f08;border-radius:22px}.jar .symbol,.jar-icon{width:44px;height:44px;border-radius:14px;display:grid;place-items:center;flex-shrink:0}.jar[data-jar=spend] .symbol,.jar-icon.spend{background:#ef7c6a1f;color:#ba4938}.jar[data-jar=save] .symbol,.jar-icon.save{background:#1f6a4a1f;color:var(--green)}.jar[data-jar=give] .symbol,.jar-icon.give{background:#86bbd81f;color:#3c7798}.jar-icon.sun{background:#f6c45326;color:#956000}.payday{background:white;color:var(--ink);border:1px solid #17251f0e}.payday p,.payday small{color:var(--muted)}.payday .eyebrow{color:var(--green)}.payday button{background:var(--green);color:white;width:100%}.payday .amount{font-size:38px}.actions{margin-bottom:24px}.tabs{padding:4px;background:#e8e7e0;border-radius:12px;gap:4px}.tabs button{background:transparent;min-height:44px;padding:10px 14px;color:var(--ink);flex:1}.tabs button.active{background:white;color:var(--ink);box-shadow:0 1px 4px #17251f22}.work h3{margin-top:12px}.work .actions{margin-bottom:0}.profilebar{padding-bottom:20px;border-bottom:1px solid #17251f10}.avatar{border:3px solid white;box-shadow:0 2px 5px #17251f12}.mac-summary{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin:26px 0}.summary-tile{background:white;border-radius:22px;border:1px solid #17251f0e;padding:20px}.summary-tile strong{display:block;font-size:28px;margin:15px 0 4px;letter-spacing:-.7px}.summary-tile small{display:block}.mac-welcome{display:grid;grid-template-columns:minmax(0,1.45fr) minmax(300px,1fr);align-items:center;gap:54px;position:relative;max-width:1140px;min-height:calc(100svh - 110px);margin:auto;padding:50px 20px}.welcome-screen{position:relative;isolation:isolate;overflow-x:hidden}.welcome-screen:before,.welcome-screen:after{content:"";position:fixed;z-index:-1;border-radius:50%;pointer-events:none}.welcome-screen:before{background:#f6c45373;width:420px;height:420px;top:-80px;right:-15px;filter:blur(2px)}.welcome-screen:after{background:#86bbd840;width:360px;height:360px;bottom:-140px;left:20px}.welcome-screen header{position:absolute;right:0;top:0;padding:20px;z-index:1}.welcome-screen header>.brand{display:none}.welcome-screen main{max-width:1260px;padding:30px 40px}.welcome-screen header button{max-width:none;background:#ffffffd9}.welcome-brand{display:flex;align-items:center;gap:11px;margin-bottom:30px}.welcome-brand b{font-size:24px;letter-spacing:-.6px}.welcome-brand small{display:block;font-size:12px;font-weight:750;color:var(--green)}.welcome-brand .logo{width:44px;height:44px;border-radius:14px}.mac-welcome h1{font-size:clamp(38px,4.4vw,52px);letter-spacing:-1.8px;line-height:1.2;margin:0 0 16px;font-weight:1000}.welcome-subtitle{font-size:18px;color:#536159;line-height:1.55;max-width:520px;margin-bottom:26px}.welcome-buttons{display:flex;align-items:flex-start;flex-direction:column;gap:12px}.welcome-buttons button{font-size:15px}.welcome-buttons svg{width:15px;height:15px;fill:currentColor}.welcome-fineprint{font-size:12px;line-height:1.6;color:#647369;margin-top:20px;max-width:470px}.phone-disclosure{font-size:13px;line-height:1.6;color:#526157;max-width:430px;margin:20px 0 0}.mac-preview{background:#fffffff5;border:1px solid #17251f0e;border-radius:24px;padding:24px;transform:rotate(1.2deg);box-shadow:0 20px 65px #1f6a4a26}.mac-preview h2{font-size:28px;margin:4px 0 0;letter-spacing:-.7px}.mac-preview .eyebrow{font-size:12px}.sparkle{color:#c88a0a}.sparkle svg{width:29px;height:29px}.preview-lines{border-top:1px solid #17251f19;margin-top:22px;padding-top:8px}.preview-line{display:flex;align-items:center;gap:12px;margin:20px 0}.preview-line small{display:block;font-size:12px}.preview-line b{font-size:15px}.preview-line strong{margin-left:auto;font:900 20px var(--rounded)}.preview-caption{font-size:12px;font-weight:700;color:#647369;margin:30px 0 0}.example-label{font-size:11px;display:block;margin-top:8px;color:#647369}nav button svg{width:23px;height:23px}dialog{border-radius:24px}nav button[aria-current=page]{background:#e5e8e0;color:var(--green)}
+@media(min-width:960px){body.app-screen{padding-left:230px}.app-screen header{position:fixed;left:0;top:0;bottom:0;width:230px;padding:28px 20px;display:block;background:#f2efe7;border-right:1px solid #17251f0c;margin:0}.app-screen header .brand{font-size:21px}.app-screen header #install{position:absolute;bottom:30px;left:20px;max-width:190px}.app-screen nav{top:145px;left:12px;right:auto;bottom:auto;width:206px;display:flex;flex-direction:column;background:transparent;border:0;padding:0;gap:3px}.app-screen nav button{max-width:none;width:100%;display:flex;flex-direction:row;justify-content:flex-start;gap:12px;padding:12px;font-size:16px;flex:auto}.app-screen nav button span{display:flex}.app-screen main{padding:32px 32px 70px;max-width:1160px}.app-screen .profilebar{border:0;margin:0;padding:0 0 12px}}
+@media(max-width:700px){.welcome-screen header{padding:16px 18px}.welcome-screen header button{font-size:12px;min-height:44px}.welcome-screen main{padding:76px 24px 36px}.mac-welcome{display:flex;flex-direction:column;align-items:stretch;gap:36px;padding:0;min-height:0}.welcome-brand{margin-bottom:28px}.mac-welcome h1{font-size:40px;letter-spacing:-1.4px;line-height:1.16}.welcome-subtitle{font-size:16px;margin-bottom:24px}.welcome-buttons button{max-width:100%;min-height:48px}.mac-preview{width:100%;max-width:390px;align-self:center;padding:22px;transform:rotate(1deg)}.welcome-screen:before{width:280px;height:280px;right:-155px;top:-80px}.welcome-screen:after{width:260px;height:260px;left:-140px;bottom:50px}.mac-summary{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin:22px 0}.summary-tile{padding:16px}.summary-tile strong{font-size:25px}.summary-tile small{font-size:12px}.jar{padding:16px 10px}.jar strong{font-size:22px}.jar .symbol{width:38px;height:38px}.profilebar .who{align-items:flex-start}.profilebar .who small{display:block;font-size:12px;margin-top:4px}.profilebar button{font-size:12px;padding:10px}h1{font-size:32px}.jars{gap:8px}}
+@media(max-width:360px){.mac-welcome h1{font-size:35px}.welcome-screen main{padding-left:20px;padding-right:20px}.jar strong{font-size:19px}}
+/* Keep related labels and controls together at every size and zoom level. */
+.split-group{border:0;padding:0;margin:24px 0 0;min-inline-size:0}
+.split-group legend{font-weight:750;font-size:16px;margin-bottom:12px}
+.split{grid-template-columns:repeat(3,minmax(0,1fr));align-items:start}
+.split-field{min-width:0}
+.split-field label{margin:0 0 8px;line-height:1.5}
+.split-field input{min-width:0;width:100%}
+.split-group #split-total{margin:12px 0 0;font-size:14px}
+dialog{max-height:calc(100dvh - 32px);width:min(540px,calc(100% - 32px));padding:24px;overscroll-behavior:contain;scrollbar-gutter:stable;overflow-x:hidden}
+.dialog-head{position:sticky;top:-24px;background:var(--oat);padding:12px 0;z-index:1;margin-bottom:12px}
+.dialog-head h2{font-size:clamp(22px,4vw,26px);min-width:0;overflow-wrap:anywhere}
+.dialog-head button{flex-shrink:0}
+#dialog-body{min-width:0}
+#dialog-body p{overflow-wrap:anywhere}
+body:has(dialog[open]){overflow:hidden}
+.row>*{min-width:0}
+.work h3,.transaction b{overflow-wrap:anywhere}
+@media(min-width:701px) and (max-width:959px){.mac-welcome{grid-template-columns:minmax(0,1fr);gap:32px;padding-top:50px}.mac-preview{max-width:420px;justify-self:center;width:100%}.welcome-copy{max-width:620px}.mac-welcome h1{font-size:44px}}
+@media(max-width:420px){dialog{padding:20px;width:calc(100% - 20px);max-height:calc(100dvh - 20px)}.dialog-head{top:-20px}.split{gap:10px}.split-field label{font-size:14px}.split-field input{padding:12px 8px}.dialog-head button{padding:10px 14px}.jars .jar strong{font-size:clamp(16px,5vw,22px)}}
+@media(max-width:300px){.split{grid-template-columns:1fr}.split-field{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);align-items:center;gap:10px}.split-field label{margin:0}.jars{grid-template-columns:1fr}}
+#install[hidden]{display:none!important}
+@media(display-mode:standalone),(display-mode:minimal-ui),(display-mode:window-controls-overlay){#install{display:none!important}}
+.welcome-screen .simple-welcome{display:block;min-height:75vh;max-width:520px;margin:auto;padding:40px 0;text-align:center}
+.simple-welcome .welcome-brand{justify-content:center;text-align:left;margin-bottom:28px}
+.welcome-screen .simple-welcome h1{font-size:clamp(30px,5vw,40px);letter-spacing:-1px}
+.simple-welcome .welcome-buttons{align-items:stretch;width:100%;max-width:340px;margin:26px auto 0}
+.simple-welcome .welcome-subtitle{font-size:18px}
+.simple-welcome .phone-disclosure,.simple-welcome .welcome-fineprint{margin:20px auto 0;max-width:370px}
+.welcome-screen:before,.welcome-screen:after{opacity:.35}
+#cloud-status:empty{display:none}
+#view-as{position:fixed;top:calc(12px + env(safe-area-inset-top));right:calc(12px + env(safe-area-inset-right));z-index:10;max-width:min(260px,65vw);min-height:44px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;box-shadow:0 3px 16px #17251f20;font-size:14px}
+#view-as[hidden]{display:none}
+#dialog-view-as[hidden]{display:none}
+.dialog-head h2{flex:1;min-width:0}
+#dialog-view-as{white-space:nowrap;min-height:44px;flex-shrink:0;width:auto;max-width:40%;font-size:14px}
+#view-as,#dialog-view-as{background-color:white;color:var(--green);font-weight:700;width:auto;padding:10px 28px 10px 12px;cursor:pointer}
+#view-as-menu{position:fixed;z-index:20;width:260px;max-width:calc(100vw - 24px);overflow:auto;padding:8px;background:var(--oat);border:1px solid #cddbd1;border-radius:18px;box-shadow:0 12px 36px #17251f26}
+#view-as-menu button{display:flex;align-items:center;gap:10px;width:100%;min-height:48px;padding:10px;text-align:left;background:transparent;color:var(--ink);border:0;border-radius:12px;font-size:15px;white-space:normal;overflow-wrap:anywhere}
+#view-as-menu button[aria-checked=true],#view-as-menu button:hover{background:#e2ebe1;color:var(--green)}
+#view-as-menu button:focus-visible{outline:2px solid var(--green);outline-offset:-2px}
+.view-as-avatar{display:grid;place-items:center;flex-shrink:0;width:30px;height:30px;background:var(--green);color:white;border-radius:10px;font-size:13px;font-weight:800}
+.view-as-check{margin-left:auto;color:var(--green);font-weight:800}
+.app-screen .profilebar>button[data-act="switch"]{display:none}
+.app-screen main{padding-top:76px}
+@media(max-width:959px){.app-screen header{padding-top:72px}}
+
+/* Four main sections, with contextual controls instead of repeated actions. */
+.section-tabs{display:flex;gap:8px;flex-wrap:wrap;margin:12px 0 24px;padding:5px;border-radius:14px;background:#eaece5;width:fit-content;max-width:100%}
+.section-tabs button{border:0;background:transparent;box-shadow:none;min-height:44px;padding:10px 16px;font-size:14px}
+.section-tabs button[aria-current=page]{background:#fff;color:var(--green);box-shadow:0 1px 3px #17251f12}
+.app-screen h1{font-size:clamp(26px,4vw,32px);line-height:1.2;letter-spacing:-.7px;margin:12px 0}
+.app-screen h2{font-size:21px;line-height:1.3}
+.app-screen .card{border-radius:18px;box-shadow:0 2px 8px #17251f05}
+.app-screen .profilebar{margin-bottom:8px}
+.app-screen main>.eyebrow{display:none}
+.app-screen .save-status{font-size:12px;color:#657169;margin:0 0 12px}
+.app-screen .footer-note{font-size:12px;margin-top:28px}
+.app-screen .actions{gap:10px;flex-wrap:wrap}
+@media(max-width:959px){
+  .app-screen nav{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:4px;padding-bottom:max(8px,env(safe-area-inset-bottom))}
+  .app-screen nav button{min-width:0;font-size:12px;min-height:54px}
+  .section-tabs{width:100%;justify-content:flex-start}
+  .section-tabs button{flex:1;padding:10px 8px}
+  .app-screen main{padding-left:18px;padding-right:18px;padding-bottom:110px}
+}

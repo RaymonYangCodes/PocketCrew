@@ -1,0 +1,426 @@
+{
+  "Home": {
+    "es": "Inicio",
+    "zh-Hans": "首页"
+  },
+  "Tasks": {
+    "es": "Tareas",
+    "zh-Hans": "任务"
+  },
+  "My Tasks": {
+    "es": "Mis tareas",
+    "zh-Hans": "我的任务"
+  },
+  "Jars": {
+    "es": "Frascos",
+    "zh-Hans": "存钱罐"
+  },
+  "My Jars": {
+    "es": "Mis frascos",
+    "zh-Hans": "我的存钱罐"
+  },
+  "Family Jars": {
+    "es": "Frascos de la familia",
+    "zh-Hans": "家庭存钱罐"
+  },
+  "Jars & goals": {
+    "es": "Frascos y metas",
+    "zh-Hans": "存钱罐与目标"
+  },
+  "Settings": {
+    "es": "Ajustes",
+    "zh-Hans": "设置"
+  },
+  "Family": {
+    "es": "Familia",
+    "zh-Hans": "家庭"
+  },
+  "Profile": {
+    "es": "Perfil",
+    "zh-Hans": "个人资料"
+  },
+  "Payday": {
+    "es": "Día de pago",
+    "zh-Hans": "零花钱日"
+  },
+  "Shop": {
+    "es": "Tienda",
+    "zh-Hans": "小商店"
+  },
+  "Spend": {
+    "es": "Gastar",
+    "zh-Hans": "花费"
+  },
+  "Save": {
+    "es": "Ahorrar",
+    "zh-Hans": "储蓄"
+  },
+  "Give": {
+    "es": "Compartir",
+    "zh-Hans": "分享"
+  },
+  "Language": {
+    "es": "Idioma",
+    "zh-Hans": "语言"
+  },
+  "Choose your language. Your family’s words stay unchanged.": {
+    "es": "Elige tu idioma. Lo que escriba tu familia no cambia.",
+    "zh-Hans": "选择界面语言。家人输入的内容不会改变。"
+  },
+  "Cancel": {
+    "es": "Cancelar",
+    "zh-Hans": "取消"
+  },
+  "Close": {
+    "es": "Cerrar",
+    "zh-Hans": "关闭"
+  },
+  "Done": {
+    "es": "Listo",
+    "zh-Hans": "完成"
+  },
+  "Next": {
+    "es": "Siguiente",
+    "zh-Hans": "下一步"
+  },
+  "Back": {
+    "es": "Atrás",
+    "zh-Hans": "返回"
+  },
+  "Skip tour": {
+    "es": "Saltar recorrido",
+    "zh-Hans": "跳过介绍"
+  },
+  "Take a tour": {
+    "es": "Ver el recorrido",
+    "zh-Hans": "看看使用指南"
+  },
+  "Learn PocketCrew": {
+    "es": "Conoce PocketCrew",
+    "zh-Hans": "了解 PocketCrew"
+  },
+  "Lock profiles": {
+    "es": "Bloquear perfiles",
+    "zh-Hans": "锁定个人资料"
+  },
+  "Sign in": {
+    "es": "Iniciar sesión",
+    "zh-Hans": "登录"
+  },
+  "Sign Out": {
+    "es": "Cerrar sesión",
+    "zh-Hans": "退出登录"
+  },
+  "Create a family": {
+    "es": "Crear una familia",
+    "zh-Hans": "创建家庭"
+  },
+  "Join a family": {
+    "es": "Unirse a una familia",
+    "zh-Hans": "加入家庭"
+  },
+  "Continue with Google": {
+    "es": "Continuar con Google",
+    "zh-Hans": "使用 Google 继续"
+  },
+  "Forgot Password?": {
+    "es": "¿Olvidaste tu contraseña?",
+    "zh-Hans": "忘记密码？"
+  },
+  "Email": {
+    "es": "Correo electrónico",
+    "zh-Hans": "电子邮箱"
+  },
+  "Password": {
+    "es": "Contraseña",
+    "zh-Hans": "密码"
+  },
+  "Parent passcode": {
+    "es": "Código del adulto",
+    "zh-Hans": "家长密码"
+  },
+  "Add Money": {
+    "es": "Añadir dinero",
+    "zh-Hans": "添加零花钱"
+  },
+  "Add goal": {
+    "es": "Añadir meta",
+    "zh-Hans": "添加目标"
+  },
+  "Suggest a goal": {
+    "es": "Proponer una meta",
+    "zh-Hans": "提出目标"
+  },
+  "Suggest a gig": {
+    "es": "Proponer un trabajo",
+    "zh-Hans": "提出小任务"
+  },
+  "Send idea": {
+    "es": "Enviar idea",
+    "zh-Hans": "发送想法"
+  },
+  "Add task": {
+    "es": "Añadir tarea",
+    "zh-Hans": "添加任务"
+  },
+  "Add work": {
+    "es": "Añadir tarea",
+    "zh-Hans": "添加任务"
+  },
+  "Get ideas": {
+    "es": "Ver ideas",
+    "zh-Hans": "找点子"
+  },
+  "To do": {
+    "es": "Por hacer",
+    "zh-Hans": "待完成"
+  },
+  "My work": {
+    "es": "Mis tareas",
+    "zh-Hans": "我的任务"
+  },
+  "Available gigs": {
+    "es": "Trabajos disponibles",
+    "zh-Hans": "可领取的小任务"
+  },
+  "Completed": {
+    "es": "Completado",
+    "zh-Hans": "已完成"
+  },
+  "All": {
+    "es": "Todo",
+    "zh-Hans": "全部"
+  },
+  "Today": {
+    "es": "Hoy",
+    "zh-Hans": "今天"
+  },
+  "This week": {
+    "es": "Esta semana",
+    "zh-Hans": "本周"
+  },
+  "Responsibilities": {
+    "es": "Responsabilidades",
+    "zh-Hans": "日常责任"
+  },
+  "Gigs": {
+    "es": "Trabajos con recompensa",
+    "zh-Hans": "奖励任务"
+  },
+  "Working on it": {
+    "es": "En marcha",
+    "zh-Hans": "正在做"
+  },
+  "Waiting for a grown-up": {
+    "es": "Esperando a un adulto",
+    "zh-Hans": "等待家长"
+  },
+  "Try again": {
+    "es": "Inténtalo otra vez",
+    "zh-Hans": "再试一次"
+  },
+  "Approved": {
+    "es": "Aprobado",
+    "zh-Hans": "已批准"
+  },
+  "Not this time": {
+    "es": "Esta vez no",
+    "zh-Hans": "这次不行"
+  },
+  "Paid": {
+    "es": "Pagado",
+    "zh-Hans": "已发放"
+  },
+  "Send to my grown-up": {
+    "es": "Enviar a mi adulto",
+    "zh-Hans": "发给家长"
+  },
+  "Pay now": {
+    "es": "Pagar ahora",
+    "zh-Hans": "现在发放"
+  },
+  "Review payday": {
+    "es": "Revisar pago",
+    "zh-Hans": "查看零花钱"
+  },
+  "My big goal": {
+    "es": "Mi gran meta",
+    "zh-Hans": "我的大目标"
+  },
+  "Your goals": {
+    "es": "Tus metas",
+    "zh-Hans": "你的目标"
+  },
+  "Big goal": {
+    "es": "Gran meta",
+    "zh-Hans": "大目标"
+  },
+  "Make my big goal": {
+    "es": "Elegir como gran meta",
+    "zh-Hans": "设为大目标"
+  },
+  "Remove goal": {
+    "es": "Quitar meta",
+    "zh-Hans": "移除目标"
+  },
+  "Complete goal": {
+    "es": "Completar meta",
+    "zh-Hans": "完成目标"
+  },
+  "Confirm completion": {
+    "es": "Confirmar",
+    "zh-Hans": "确认完成"
+  },
+  "Jar history": {
+    "es": "Historial de frascos",
+    "zh-Hans": "存钱罐记录"
+  },
+  "History": {
+    "es": "Historial",
+    "zh-Hans": "历史记录"
+  },
+  "Wins": {
+    "es": "Logros",
+    "zh-Hans": "小成就"
+  },
+  "Nothing here yet": {
+    "es": "Aún no hay nada",
+    "zh-Hans": "这里还没有内容"
+  },
+  "Wishlist": {
+    "es": "Lista de deseos",
+    "zh-Hans": "心愿单"
+  },
+  "Cart": {
+    "es": "Carrito",
+    "zh-Hans": "购物车"
+  },
+  "Purchases": {
+    "es": "Compras",
+    "zh-Hans": "已购记录"
+  },
+  "Ask to buy": {
+    "es": "Pedir comprar",
+    "zh-Hans": "申请购买"
+  },
+  "Add to cart": {
+    "es": "Añadir al carrito",
+    "zh-Hans": "加入购物车"
+  },
+  "Make a savings goal": {
+    "es": "Crear una meta",
+    "zh-Hans": "设为目标"
+  },
+  "Approve": {
+    "es": "Aprobar",
+    "zh-Hans": "批准"
+  },
+  "Give free": {
+    "es": "Regalar",
+    "zh-Hans": "赠送"
+  },
+  "Edit price": {
+    "es": "Cambiar precio",
+    "zh-Hans": "修改价格"
+  },
+  "Remove request": {
+    "es": "Quitar solicitud",
+    "zh-Hans": "移除申请"
+  },
+  "Check for updates": {
+    "es": "Buscar actualizaciones",
+    "zh-Hans": "检查更新"
+  },
+  "App updates": {
+    "es": "Actualizaciones",
+    "zh-Hans": "应用更新"
+  },
+  "Profiles": {
+    "es": "Perfiles",
+    "zh-Hans": "个人资料"
+  },
+  "Payday schedule": {
+    "es": "Calendario de pagos",
+    "zh-Hans": "零花钱计划"
+  },
+  "Edit payday schedule": {
+    "es": "Cambiar calendario",
+    "zh-Hans": "修改发放计划"
+  },
+  "Connect family": {
+    "es": "Conectar familia",
+    "zh-Hans": "连接家庭"
+  },
+  "Add child": {
+    "es": "Añadir niño",
+    "zh-Hans": "添加孩子"
+  },
+  "Add Child": {
+    "es": "Añadir niño",
+    "zh-Hans": "添加孩子"
+  },
+  "Edit child": {
+    "es": "Editar perfil",
+    "zh-Hans": "编辑孩子资料"
+  },
+  "Remove child": {
+    "es": "Quitar niño",
+    "zh-Hans": "移除孩子"
+  },
+  "Save changes": {
+    "es": "Guardar cambios",
+    "zh-Hans": "保存修改"
+  },
+  "Family name": {
+    "es": "Nombre de la familia",
+    "zh-Hans": "家庭名称"
+  },
+  "Goal title": {
+    "es": "Nombre de la meta",
+    "zh-Hans": "目标名称"
+  },
+  "Target amount": {
+    "es": "Cantidad de la meta",
+    "zh-Hans": "目标金额"
+  },
+  "Target date": {
+    "es": "Fecha de la meta",
+    "zh-Hans": "目标日期"
+  },
+  "Amount": {
+    "es": "Cantidad",
+    "zh-Hans": "金额"
+  },
+  "Reason (optional)": {
+    "es": "Motivo (opcional)",
+    "zh-Hans": "原因（可选）"
+  },
+  "What’s new": {
+    "es": "Novedades",
+    "zh-Hans": "新消息"
+  },
+  "VIEW AS": {
+    "es": "VER COMO",
+    "zh-Hans": "查看身份"
+  },
+  "Your crew": {
+    "es": "Tu familia",
+    "zh-Hans": "你的家人"
+  },
+  "Needs your review": {
+    "es": "Para revisar",
+    "zh-Hans": "等待你查看"
+  },
+  "All tasks": {
+    "es": "Todas las tareas",
+    "zh-Hans": "全部任务"
+  },
+  "Record spending": {
+    "es": "Anotar un gasto",
+    "zh-Hans": "记录花费"
+  },
+  "No real money is moved.": {
+    "es": "No se mueve dinero real.",
+    "zh-Hans": "不会转移真实资金。"
+  }
+}

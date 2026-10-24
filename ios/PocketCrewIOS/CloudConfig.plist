@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>POCKETCREW_SUPABASE_URL</key>
+  <string>https://bvfzqfeyxyjycmkpifgz.supabase.co</string>
+  <key>POCKETCREW_SUPABASE_PUBLISHABLE_KEY</key>
+  <string>sb_publishable_rSy5ZLM5o5IQnmvyJoMyhw_Ecl_Zq_t</string>
+  <key>POCKETCREW_AUTH_REDIRECT_URL</key>
+  <string>pocketcrew://auth-callback</string>
+</dict>
+</plist>

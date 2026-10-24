@@ -1,0 +1,18 @@
+import assert from 'node:assert/strict';
+import {applyLocalShopping} from '../download-site/public/app/shopping-domain.mjs';
+import {goalProgress} from '../download-site/public/app/goal-progress.mjs';
+const fresh=()=>({audit:[],children:[{id:'a'}],ledger:[{childId:'a',jar:'spend',amount:1500}],goals:[{id:'g',childId:'a',status:'active',featured:true,target:1200,saved:0}]});
+let s=fresh();
+assert.throws(()=>applyLocalShopping(s,'a','completeGoal',{id:'g',expectedPrice:1200}));
+assert.equal(s.ledger.length,1);
+assert.throws(()=>applyLocalShopping(s,'parent','completeGoal',{id:'g',expectedPrice:1000}));
+applyLocalShopping(s,'parent','completeGoal',{id:'g',expectedPrice:1200});
+assert.equal(s.ledger.reduce((n,t)=>n+t.amount,0),300);
+assert.equal(s.goals[0].status,'completed');
+assert.equal(goalProgress(s,s.goals[0]).percent,100);
+assert.throws(()=>applyLocalShopping(s,'parent','completeGoal',{id:'g',expectedPrice:1200}));
+assert.equal(s.ledger.length,2);
+s=fresh();s.ledger[0].amount=100;
+assert.throws(()=>applyLocalShopping(s,'parent','completeGoal',{id:'g',expectedPrice:1200}));
+assert.equal(s.goals[0].status,'active');assert.equal(s.ledger.length,1);
+console.log('Goal completion: parent only, exact deduction, no duplicate, insufficient funds, completed progress passed.');
