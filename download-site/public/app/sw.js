@@ -1,4 +1,4 @@
-const CACHE='pocketcrew-phone-v33';
+const CACHE='pocketcrew-phone-v34';
 const ICONS=['/app/preset-sections.mjs','/app/icon-180.png?v=2','/app/icon.svg?v=2','/app/icon-192.png?v=2','/app/icon-512.png?v=2'];
 const FILES=['/app/','/app/index.html','/app/style.css','/app/mac-theme.css','/app/mac-theme.js','/app/app.js','/app/domain.mjs','/app/cloud.mjs','/app/cloud-ui.mjs','/app/cloud-actions.mjs','/app/manifest.webmanifest','/app/icon.svg','/app/icon-192.png','/app/icon-512.png'];
 FILES.push('/app/shopping.mjs','/app/shopping-domain.mjs','/app/shopping.css');

@@ -82,12 +82,6 @@ struct CloudAuthView: View {
             Text(AppLanguage.text("Continue with Google"))
           }.frame(maxWidth: .infinity)
         }.buttonStyle(SecondaryButtonStyle()).disabled(!cloud.isConfigured || isWorking)
-        if mode == .signIn {
-          Button("Forgot password?") {
-            Task { await cloud.sendPasswordReset(email: email) }
-          }.buttonStyle(.plain).font(.callout.weight(.bold)).foregroundStyle(Color.evergreen)
-            .disabled(!emailIsValid || isWorking)
-        }
         if isWorking { ProgressView("Connecting securely…") }
         #if os(macOS)
         Text("This Mac remembers your sign-in until you choose Sign Out, without using Keychain. Sign-in tokens are stored unencrypted in a file restricted to your Mac user account. Profile passcodes still protect the app’s views; use your Mac screen lock too.")
